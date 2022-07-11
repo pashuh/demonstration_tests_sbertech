@@ -19,7 +19,7 @@
 
 ## :technologist: Технологии и инструменты
 
-<p  align="center"
+<p  align="center">
 
 <img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg">
 <img width="5%" title="Java" src="images/logo/Java.svg">
