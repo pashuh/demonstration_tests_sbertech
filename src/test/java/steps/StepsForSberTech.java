@@ -79,7 +79,7 @@ public class StepsForSberTech {
 
     @Step("Открываем направления в Школе 21")
     public void learning() {
-        $(".header--active").$("[data-goto='.learning']").click();
+        $(".header__inner").$("[data-goto='.learning']").click();
     }
 
     @Step("Проверяем наличие направления DevOps")
