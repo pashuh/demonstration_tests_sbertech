@@ -58,7 +58,7 @@ test {
     }
 }
 
-task testJobSearch(type: Test) {
+task testSberTech(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags "job_search"

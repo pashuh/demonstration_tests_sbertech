@@ -65,31 +65,30 @@
 ### Локальный запуск тестов
 
 ```bash
-gradle clean test
+gradle clean testSberTech
 ```
 
 ### Удаленный запуск тестов
 
 ```bash
-gradle clean test 
+gradle
+clean
+testSberTech
+-Dremote=${ADDRESS}
 -Dbrowser=${BROWSER}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DbrowserMobileView="${BROWSER_MOBILE}"
--DremoteDriverUrl=https://user1:1234@${REMOTE_DRIVER_URL}/wd/hub/
--DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
--Dthreads=${THREADS}
+-Dversion=${BROWSER_VERSION}
+-Dresolution=${RESOLUTION}
 ```
 
 ### Параметры сборки
 
-> <code>REMOTE_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
+> <code>REMOTE</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 >
 > <code>BROWSER</code> – браузер, в котором будут выполняться тесты (_по умолчанию - <code>chrome</code>_).
 >
-> <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты (_по умолчанию - <code>91.0</code>_).
+> <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты (_по умолчанию - <code>100</code>_).
 >
-> <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
+> <code>RESOLUTION</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
 
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/AUTO-638/)
 
@@ -125,25 +124,7 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
   <img src="images/screens/Alure_Report3.png" alt="Allure Report" width="900">
 </p>
 
-## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/10145)
 
-### :pushpin: Основной дашборд
-
-<p align="center">
-  <img src="images/screens/Alure_TO.png" alt="dashboards" width="900">
-</p>
-
-### :pushpin: Тест-кейсы
-
-<p align="center">
-  <img src="images/screens/Alure_TO3.png" alt="test cases" width="900">
-</p>
-
-## <img width="4%" title="Jira" src="images/logo/Jira.svg"> Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638)
-
-<p align="center">
-  <img src="images/screens/Jira.png" alt="jira" width="1000">
-</p>
 
 ## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
