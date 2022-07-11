@@ -31,6 +31,7 @@
 <img width="5%" title="Allure Report" src="images/logo/Allure.svg">
 <img width="5%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="5%" title="Telegram" src="images/logo/Telegram.svg">
+</p>
 
 > *В данном проекте автотесты написаны на <code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> для UI-тестов.*
 >
