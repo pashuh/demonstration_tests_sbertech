@@ -21,17 +21,16 @@
 
 <p  align="center"
 
-<code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
-<code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
-<code><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></code>
-<code><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></code>
-<code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
-<code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
-<code><img width="5%" title="GitHub" src="images/logo/GitHub.svg"></code>
-<code><img width="5%" title="Allure Report" src="images/logo/Allure.svg"></code>
-<code><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
-<code><img width="5%" title="Jira" src="images/logo/Java.svg"></code>
-<code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>
+<img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg">
+<img width="5%" title="Java" src="images/logo/Java.svg">
+<img width="5%" title="Selenoid" src="images/logo/Selenoid.svg">
+<img width="5%" title="Selenide" src="images/logo/Selenide.svg">
+<img width="5%" title="Gradle" src="images/logo/Gradle.svg">
+<img width="5%" title="Junit5" src="images/logo/Junit5.svg">
+<img width="5%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="5%" title="Allure Report" src="images/logo/Allure.svg">
+<img width="5%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="5%" title="Telegram" src="images/logo/Telegram.svg">
 
 > *В данном проекте автотесты написаны на <code><strong>*Java*</strong></code> с использованием фреймворка <code><strong>*Selenide*</strong></code> для UI-тестов.*
 >
@@ -43,22 +42,18 @@
 >
 >*<code><strong>*Selenoid*</strong></code> используется для запуска браузеров в контейнерах  <code><strong>*Docker*</strong></code>.*
 >
->*<code><strong>*Allure Report, Allure TestOps, Jira, Telegram Bot*</strong></code> используются для визуализации результатов тестирования.*
+>*<code><strong>*Allure Report, Telegram Bot*</strong></code> используются для визуализации результатов тестирования.*
 
 
 ## :bookmark_tabs: Реализованы проверки
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UI
 
-> - [x] *Проверка перехода на страницу авторизации продукта 'Курьер'*
->- [x] *Проверка ошибок в консоле*
->- [x] *Проверка раздела 'О компании'*
->- [x] *Проверка перехода на страницу клиента из раздела 'Клиенты'*
->- [x] *Проверка банера главной страницы*
->- [x] *Проверка раздела 'Клиенты'*
->- [x] *Проверка работы поиска*
->- [x] *Проверка оформления подписки по почте*
->- [x] *Проверка заголовка главной страницы*
+> - [x] *Проверка вакансий в результате поиска по запросу 'QA'*
+>- [x] *Проверка вакансий в результате поиска по запросу 'QA' в ПАО Сбербанк в г. Москва*
+>- [x] *Проверка наличия направления DevOps в Школе 21*
+>- [x] *Проверка возможности заполнение заявки в Sberseasons*
+>- [x] *Проверка наличия команды 'Департамент образовательных цифровых платформ' в SberTech*
 
 ## :computer: Запуск тестов из терминала
 
@@ -106,7 +101,7 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
   <img src="images/screens/Jenkins2.png" alt="job" width="1000">
 </p>
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/AUTO-638/8/allure/)
+## <img width="4%" title="Allure Report" src="images/logo/Allure.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/demonstration_tests_sbertech/)
 
 ### :pushpin: Общая информация
 
@@ -121,7 +116,7 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
 >- [x] <code><strong>*EXECUTORS*</strong></code> - отображает исполнителя текущей сборки (ссылка на сборку в Jenkins)
 
 <p align="center">
-  <img src="images/screens/Alure_Report3.png" alt="Allure Report" width="900">
+  <img src="images/screens/AllureReporet.png" alt="Allure Report" width="900">
 </p>
 
 
@@ -138,6 +133,6 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/test.gif">
+  <img title="Selenoid Video" src="images/screens/testvideo.gif">
 </p>
 

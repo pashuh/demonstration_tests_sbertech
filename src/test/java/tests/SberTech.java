@@ -17,7 +17,7 @@ public class SberTech extends TestBase {
 
     @Test
     @Tag("job_search")
-    @DisplayName("Поиск вакансий QA")
+    @DisplayName("Проверка вакансий в результате поиска по запросу 'QA'")
     public void sberTechTest1() {
         steps.openPage();
         steps.clickVacancies();
@@ -29,7 +29,7 @@ public class SberTech extends TestBase {
 
     @Test
     @Tag("job_search")
-    @DisplayName("Поиск вакансий QA в ПАО Сбербанк в г. Москва")
+    @DisplayName("*Проверка вакансий в результате поиска по запросу 'QA' в ПАО Сбербанк в г. Москва*")
     public void sberTechTest2() {
         steps.openPage();
         steps.clickVacancies();
@@ -58,7 +58,7 @@ public class SberTech extends TestBase {
 
     @Test
     @Tag("application")
-    @DisplayName("Заполнение заявки в Sberseasons")
+    @DisplayName("Проверка возможности заполнение заявки в Sberseasons")
     public void sberTechTest4() {
         steps.openPage();
         steps.goToPrograms();
@@ -72,7 +72,7 @@ public class SberTech extends TestBase {
 
     @Test
     @Tag("viewing_commands")
-    @DisplayName("Просмотр команд в SberTech")
+    @DisplayName("Проверка наличия команды 'Департамент образовательных цифровых платформ' в SberTech")
     public void sberTechTest5() {
         steps.openPage();
         steps.commandsSberTech();

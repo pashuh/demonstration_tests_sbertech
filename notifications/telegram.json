@@ -1,8 +1,8 @@
 {
   "base": {
-    "project": "Test Notifications",
-    "environment": "some env",
-    "comment": "some comment",
+    "project": "testSberTech",
+    "environment": "preProd",
+    "comment": "Tag:'job_search' + 'viewing_commands' + 'viewing_programs' + 'application'",
     "reportLink": "",
     "language": "en",
     "messenger": "telegram",
