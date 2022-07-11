@@ -26,7 +26,7 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.baseUrl = "https://sbertech.ru/";
-        Configuration.timeout = 7000;
+        Configuration.timeout = 10000;
 
         String browserResolution = System.getProperty("resolution", "1920x1080");
         Configuration.browserSize = browserResolution;

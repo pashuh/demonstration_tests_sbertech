@@ -33,16 +33,15 @@ public class StepsForSberTech {
     @Step("Кликнуть 'Найти'")
     public void clickSearch() {
         $("[type=submit]").click();
-//        sleep(7000);
     }
 
     @Step("Проверяем наличие искомых вакансий")
-    public void findVac (String vacancies) {
+    public void findVac(String vacancies) {
         $$(".css-cqzo9v.eotq4q00").find(Condition.text(vacancies)).shouldBe(Condition.visible);
     }
 
     @Step("Проставляем/отключаем вакансии ПАО Сбербанк")
-    public void clickPAO(){
+    public void clickPAO() {
         $(".css-1qh51lz.eotq4q00").$(byText("ПАО Сбербанк")).click();
     }
 
@@ -52,7 +51,7 @@ public class StepsForSberTech {
     }
 
     @Step("Вводим город для поиска вакансий")
-    public void setValueCityMoscow(){
+    public void setValueCityMoscow() {
         $("[placeholder='Населенный пункт']").setValue("Москва");
         sleep(7000);
         $("[role=presentation]").$(byText("Город Москва")).click();
@@ -69,7 +68,7 @@ public class StepsForSberTech {
     }
 
     @Step("Переходим к программам в вузах")
-    public void goToPrograms(){
+    public void goToPrograms() {
         $(".flex.justify-between.align-baseline.w-full").$("[href='/streams']").click();
     }
 

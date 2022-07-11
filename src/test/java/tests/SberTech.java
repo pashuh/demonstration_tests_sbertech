@@ -1,30 +1,24 @@
 package tests;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import helpers.Attach;
+
 import io.qameta.allure.Link;
 import io.qameta.allure.Owner;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import steps.StepsForSberTech;
 
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
 
 @Owner("pashuh")
 @Link(name = "SberTech", url = "https://sbertech.ru/")
 public class SberTech extends TestBase {
     StepsForSberTech steps = new StepsForSberTech();
     String vacancies = "QA";
+
     @Test
     @Tag("job_search")
     @DisplayName("Поиск вакансий QA")
     public void sberTechTest1() {
-//        Configuration.browserSize = "1920x1080";
-//        Configuration.timeout = 7000;
         steps.openPage();
         steps.clickVacancies();
         steps.goswitchTo(1);
@@ -37,8 +31,6 @@ public class SberTech extends TestBase {
     @Tag("job_search")
     @DisplayName("Поиск вакансий QA в ПАО Сбербанк в г. Москва")
     public void sberTechTest2() {
-//        Configuration.browserSize = "1920x1080";
-//        Configuration.timeout = 7000;
         steps.openPage();
         steps.clickVacancies();
         steps.goswitchTo(2);
@@ -87,12 +79,4 @@ public class SberTech extends TestBase {
         steps.depEducation();
         steps.finddepEducation();
     }
-
-//    @AfterEach
-//    void afterEach() {
-//        Attach.screenshotAs("Last screenshot");
-//        Attach.pageSource();
-//        Attach.browserConsoleLogs();
-//        Attach.addVideo();
-//    }
 }
