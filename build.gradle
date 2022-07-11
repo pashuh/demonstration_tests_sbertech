@@ -65,6 +65,5 @@ task testJobSearch(type: Test) {
         includeTags "viewing_commands"
         includeTags "viewing_programs"
         includeTags "application"
-        excludeTags "notrun"
     }
 }
