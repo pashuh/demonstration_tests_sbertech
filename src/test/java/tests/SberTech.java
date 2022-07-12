@@ -44,17 +44,19 @@ public class SberTech extends TestBase {
         steps.findCompany();
     }
 
+
     @Test
     @Tag("viewing_programs")
-    @DisplayName("Проверка наличия направления DevOps в Школе 21")
+    @DisplayName("Проверка наличия образовательной программы Магистратуры 'Data Engineering' на кафедре СберТеха в МФТИ")
     public void sberTechTest3() {
         steps.openPage();
         steps.goToPrograms();
-        steps.openSchool21();
+        steps.openMIPT();
         steps.goswitchTo(3);
-        steps.learning();
-        steps.devOps();
+        steps.goToMagistracy();
+        steps.findDataE();
     }
+
 
     @Test
     @Tag("application")

@@ -72,21 +72,6 @@ public class StepsForSberTech {
         $(".flex.justify-between.align-baseline.w-full").$("[href='/streams']").click();
     }
 
-    @Step("Открываем Школу 21")
-    public void openSchool21() {
-        $("[href='https://21-school.ru']").click();
-    }
-
-    @Step("Открываем направления в Школе 21")
-    public void learning() {
-        $(".header__inner").$("[data-goto='.learning']").click();
-    }
-
-    @Step("Проверяем наличие направления DevOps")
-    public void devOps() {
-        $(".learning__wrapper").$(byText("DevOps")).shouldHave(Condition.text("DevOps"));
-    }
-
     @Step("Открываем Sberseasons")
     public void openSberseasons() {
         $("[href='https://sbergraduate.ru/sberseasons-moscow/']").click();
@@ -132,4 +117,18 @@ public class StepsForSberTech {
         $(".text-h4").shouldHave(Condition.text("Департамент образовательных цифровых платформ"));
     }
 
+    @Step("Открываем МФТИ")
+    public void openMIPT() {
+        $(".grid.grid-cols-12.gap-4").$("[href='/mipt']").click();
+    }
+
+    @Step("Открываем программу 'Магистратура'")
+    public void goToMagistracy() {
+        $(".justify-start").$(byText("Магистратура")).click();
+    }
+
+    @Step("Проверяем наличие направления 'Data Engineering'")
+    public void findDataE() {
+        $("[class='col-span-12 md:col-span-7 lg:col-span-8 mt-[11px]']").shouldHave(text("Data Engineering"));
+    }
 }
