@@ -78,7 +78,7 @@ testSberTech
 
 ### Параметры сборки
 
-> <code>REMOTE</code> – адрес удаленного сервера, на котором будут запускаться тесты.
+> <code>ADDRESS</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 >
 > <code>BROWSER</code> – браузер, в котором будут выполняться тесты (_по умолчанию - <code>chrome</code>_).
 >
@@ -134,6 +134,6 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
 
 > К каждому тесту в отчете прилагается видео.
 <p align="center">
-  <img title="Selenoid Video" src="images/screens/testvideo.gif">
+  <img title="Selenoid Video" src="images/gif/testvideo.gif">
 </p>
 
