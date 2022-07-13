@@ -7,11 +7,16 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class StepsForSberTech {
+public class StepsForRabotaSber {
     @Step("Открываем страницу SberTech")
     public void openPage() {
         open("https://sbertech.ru/");
         $(".min-h-screen.flex.flex-col").shouldHave(text("СберТех"));
+    }
+
+    @Step("Принимаем куки")
+    public void clickCookies() {
+        $("[class='css-1oyj105 e18cksw60']").click();
     }
 
     @Step("Кликнуть в хедере 'Вакансии'")
@@ -37,7 +42,7 @@ public class StepsForSberTech {
 
     @Step("Проверяем наличие искомых вакансий")
     public void findVac(String vacancies) {
-        $$(".css-cqzo9v.eotq4q00").find(Condition.text(vacancies)).shouldBe(Condition.visible);
+        $$("[class='e14jyz651 css-kqyu1g e1j1p76k0']").find(Condition.text(vacancies)).shouldBe(Condition.visible);
     }
 
     @Step("Проставляем/отключаем вакансии ПАО Сбербанк")

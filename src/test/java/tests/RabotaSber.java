@@ -6,13 +6,13 @@ import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import steps.StepsForSberTech;
+import steps.StepsForRabotaSber;
 
 
 @Owner("pashuh")
 @Link(name = "SberTech", url = "https://sbertech.ru/")
-public class SberTech extends TestBase {
-    StepsForSberTech steps = new StepsForSberTech();
+public class RabotaSber extends TestBase {
+    StepsForRabotaSber steps = new StepsForRabotaSber();
     String vacancies = "QA";
 
     @Test
@@ -20,6 +20,7 @@ public class SberTech extends TestBase {
     @DisplayName("Проверка вакансий в результате поиска по запросу 'QA'")
     public void sberTechTest1() {
         steps.openPage();
+        steps.clickCookies();
         steps.clickVacancies();
         steps.goswitchTo(1);
         steps.setValueVacansies(vacancies);
