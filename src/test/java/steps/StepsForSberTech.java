@@ -7,17 +7,13 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class StepsForRabotaSber {
+public class StepsForSberTech {
     @Step("Открываем страницу SberTech")
     public void openPage() {
         open("https://sbertech.ru/");
         $(".min-h-screen.flex.flex-col").shouldHave(text("СберТех"));
     }
 
-    @Step("Принимаем куки")
-    public void clickCookies() {
-        $("[class='css-1oyj105 e18cksw60']").click();
-    }
 
     @Step("Кликнуть в хедере 'Вакансии'")
     public void clickVacancies() {
