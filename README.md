@@ -28,8 +28,10 @@
 <img width="5%" title="Gradle" src="images/logo/Gradle.svg">
 <img width="5%" title="Junit5" src="images/logo/Junit5.svg">
 <img width="5%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="5%" title="Allure TestOPS" src="images/logo/Allure_TO.svg">
 <img width="5%" title="Allure Report" src="images/logo/Allure.svg">
 <img width="5%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="5%" title="Jira" src="images/logo/Jira.svg">
 <img width="5%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
@@ -43,7 +45,7 @@
 >
 >*<code><strong>*Selenoid*</strong></code> используется для запуска браузеров в контейнерах  <code><strong>*Docker*</strong></code>.*
 >
->*<code><strong>*Allure Report, Telegram Bot*</strong></code> используются для визуализации результатов тестирования.*
+>*<code><strong>*Allure Report, Allure TestOps, Jira, Telegram Bot*</strong></code> используются для визуализации результатов тестирования.*
 
 
 ## :bookmark_tabs: Реализованы проверки
@@ -120,6 +122,30 @@ Report*</strong></code>, кликнув по которому, откроется страница с сформированны
   <img src="images/screens/AllureReporet.png" alt="Allure Report" width="900">
 </p>
 
+### :pushpin: Тесты
+<p align="center">
+  <img src="images/screens/AllureReport2.png" alt="Allure Report" width="900">
+</p>
+
+## <img width="4%" title="Allure TestOPS" src="images/logo/Allure_TO.svg"> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/14276)
+
+### :pushpin: Основной дашборд
+
+<p align="center">
+  <img src="images/screens/AllureTestOps.png" alt="dashboards" width="900">
+</p>
+
+### :pushpin: Тест-кейсы
+
+<p align="center">
+  <img src="images/screens/AllureTestOps2.png" alt="test cases" width="900">
+</p>
+
+## <img width="4%" title="Jira" src="images/logo/Jira.svg"> Интеграция с [Jira](https://jira.autotests.cloud/browse/AUTO-638)
+
+<p align="center">
+  <img src="images/screens/Jira.png" alt="jira" width="1000">
+</p>
 
 
 ## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
