@@ -3,14 +3,14 @@ package tests;
 
 import io.qameta.allure.Link;
 import io.qameta.allure.Owner;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import steps.StepsForSberTech;
 
 
 @Owner("pashuh")
 @Link(name = "SberTech", url = "https://sbertech.ru/")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+
 public class SberTech extends TestBase {
     StepsForSberTech steps = new StepsForSberTech();
     String vacancies = "QA";
@@ -18,6 +18,7 @@ public class SberTech extends TestBase {
     @Test
     @Tag("job_search")
     @DisplayName("Проверка вакансий в результате поиска по запросу 'QA'")
+    @Order(1)
     public void sberTechTest1() {
         steps.openPage();
         steps.clickVacancies();
@@ -30,6 +31,7 @@ public class SberTech extends TestBase {
     @Test
     @Tag("job_search")
     @DisplayName("*Проверка вакансий в результате поиска по запросу 'QA' в ПАО Сбербанк в г. Москва*")
+    @Order(2)
     public void sberTechTest2() {
         steps.openPage();
         steps.clickVacancies();
@@ -48,6 +50,7 @@ public class SberTech extends TestBase {
     @Test
     @Tag("viewing_programs")
     @DisplayName("Проверка наличия образовательной программы Магистратуры 'Data Engineering' на кафедре СберТеха в МФТИ")
+    @Order(3)
     public void sberTechTest3() {
         steps.openPage();
         steps.goToPrograms();
@@ -61,6 +64,7 @@ public class SberTech extends TestBase {
     @Test
     @Tag("application")
     @DisplayName("Проверка возможности заполнение заявки в Sberseasons")
+    @Order(4)
     public void sberTechTest4() {
         steps.openPage();
         steps.goToPrograms();
@@ -75,6 +79,7 @@ public class SberTech extends TestBase {
     @Test
     @Tag("viewing_commands")
     @DisplayName("Проверка наличия команды 'Департамент образовательных цифровых платформ' в SberTech")
+    @Order(5)
     public void sberTechTest5() {
         steps.openPage();
         steps.commandsSberTech();
